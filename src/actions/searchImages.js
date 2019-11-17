@@ -38,8 +38,9 @@ export const fetchImages = () => {
       try {
         let tags = (' ' + searchQuery).slice(1)
         tags = tags.replace(' ',',')
-        fetch(`https://www.flickr.com/services/rest?method=flickr.photos.search&api_key=${API_KEY}&tags=${tags}&per_page=10&page=${page}&format=json&extras=owner_name,date_taken,url_m,url_o`)
-          .then(response => {console.log(response); debugger; return response.json();})
+        fetch(`https://www.flickr.com/services/rest?method=flickr.photos.search&api_key=${API_KEY}&tags=${tags}&per_page=10&page=${page}&format=json&nojsoncallback=1&extras=owner_name,date_taken,url_m,url_o`)
+          .then(response => response.json())
+          .then(json => json.photos.photo)
           .then(images => {
             return images.map(elem => {
               return {
@@ -56,8 +57,6 @@ export const fetchImages = () => {
           })
           .then(imagesNormalized => dispatch(fetchImagesSuccess(imagesNormalized)))
       } catch (error) {
-        console.log(error)
-        debugger
         dispatch(fetchImagesError(error))
       }
     }
