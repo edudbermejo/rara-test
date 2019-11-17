@@ -9,16 +9,19 @@ import {
 
 let ThumbnailsList = ({dispatch}) => {
 
-  let images = useSelector(state => state.images)
+  const images = useSelector(state => state.images)
   
-  let loadMoreButton = images.length > 0
-    ? <button onClick={dispatch(fetchImages())}>Load more</button>
-    : ''
+  const loadMoreButton = images.length > 0
+    ? <button onClick={() => dispatch(fetchImages())}>Load more</button>
+    : undefined
+
+  const imagesHtml = images.length > 0
+  ? <ul>{images.map(image => <li><ImageCard key={image.id} imageDetails={image} /></li>)}</ul>
+  : undefined
 
   return (
     <div>
-      {images.forEach(image =>
-        <ImageCard imageDetails={image}/>)}
+      {imagesHtml}
       {loadMoreButton}
     </div>
   )
