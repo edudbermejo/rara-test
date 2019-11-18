@@ -6,6 +6,7 @@ import ImageCard from '../components/ImageCard.js'
 import {
   fetchImages
 } from '../actions/searchImages'
+import './ThumbnailsList.css'
 
 let ThumbnailsList = ({dispatch}) => {
 

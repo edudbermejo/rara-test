@@ -1,8 +1,9 @@
 import React from 'react'
+import styled from 'styled-components'
 import InformationBlock from './InformationBlock.js'
 
-function ImageCard({imageDetails}) {
-  
+function ImageCardPreStyle({imageDetails}) {
+
   return  (
     <div>
       <img src={`https://farm${imageDetails.farm}.staticflickr.com/${imageDetails.server}/${imageDetails.id}_${imageDetails.secret}.jpg`} alt="thumbnail"></img>
@@ -13,5 +14,8 @@ function ImageCard({imageDetails}) {
     </div>
   )
 }
+
+const ImageCard = styled(ImageCardPreStyle)``
+
 
 export default ImageCard

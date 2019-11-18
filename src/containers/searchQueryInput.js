@@ -1,8 +1,10 @@
 import  React from 'react'
 import { connect } from 'react-redux'
+
 import {
   searchQuery
 } from '../actions/searchImages'
+import './SearchQueryInput.css'
 
 
 let SearchQueryInput = ({dispatch}) => {
@@ -14,7 +16,7 @@ let SearchQueryInput = ({dispatch}) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="search-bar">
       <input type="text" onChange={(event) => searchInputFinal = event.target.value } />
       <button type="submit">Search</button>      
     </form>

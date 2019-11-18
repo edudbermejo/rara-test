@@ -1,22 +1,17 @@
 .App {
+  background: hsl(0, 0%, 85%);
   text-align: center;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+header {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button,
+input[type="submit"] {
+  background: hsl(191, 100%, 42%);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
-}
+

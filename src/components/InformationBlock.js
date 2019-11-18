@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './InformationBlock.css'
 
 function InformationBlock({label, info}){
