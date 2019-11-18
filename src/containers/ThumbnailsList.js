@@ -13,11 +13,11 @@ let ThumbnailsList = ({dispatch}) => {
   const images = useSelector(state => state.images)
   
   const loadMoreButton = images.length > 0
-    ? <button onClick={() => dispatch(fetchImages())}>Load more</button>
+    ? <button className="button-more" onClick={() => dispatch(fetchImages())}>Load more</button>
     : undefined
 
   const imagesHtml = images.length > 0
-  ? <ul>{images.map(image => <li><ImageCard key={image.id} imageDetails={image} /></li>)}</ul>
+  ? <ul className="images-list">{images.map(image => <li><ImageCard key={image.id} imageDetails={image} /></li>)}</ul>
   : undefined
 
   return (

@@ -4,9 +4,9 @@ import './InformationBlock.css'
 
 function InformationBlock({label, info}){
   return (
-    <div>
-      <span class="information-block-label">{label}</span>
-      <span class="information-block-info">{info || '-'}</span>
+    <div className="information-block">
+      <span className="information-block-label">{label}</span>
+      <span className="information-block-info">{info || '-'}</span>
     </div>
   )
 }

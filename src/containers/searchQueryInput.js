@@ -17,7 +17,7 @@ let SearchQueryInput = ({dispatch}) => {
 
   return (
     <form onSubmit={handleSubmit} className="search-bar">
-      <input type="text" onChange={(event) => searchInputFinal = event.target.value } />
+      <input type="text" placeholder="Search" onChange={(event) => searchInputFinal = event.target.value } />
       <button type="submit">Search</button>      
     </form>
   )

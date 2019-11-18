@@ -1,0 +1,30 @@
+.image-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin: 8px 0;
+  background: white;
+  border: 1px solid hsl(0, 0%, 82%);
+  text-align: left;
+  max-width: 272px;
+}
+
+.image-card img {
+  width: 272px;
+  height: 248px;
+  padding-bottom: 8px;
+}
+
+.image-information {
+  padding-bottom: 8px;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.image-card a {
+  padding-top: 16px;
+  width: 100%;
+}
+
+.image-card button {
+  width: 100%;
+}
