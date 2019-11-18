@@ -1,8 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
+
 import InformationBlock from './InformationBlock.js'
 
-function ImageCardPreStyle({imageDetails}) {
+function ImageCard({imageDetails}) {
 
   return  (
     <div>
@@ -14,8 +14,6 @@ function ImageCardPreStyle({imageDetails}) {
     </div>
   )
 }
-
-const ImageCard = styled(ImageCardPreStyle)``
 
 
 export default ImageCard
