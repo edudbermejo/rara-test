@@ -13,10 +13,12 @@ input[type="submit"] {
   background: hsl(191, 100%, 42%);
   border: 1px solid hsl(191, 100%, 50%);
   color: white;
-  padding: 1em;
+  padding: 12px;
   font-weight: bold;
   outline: none;
   box-sizing: border-box;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 button:hover,

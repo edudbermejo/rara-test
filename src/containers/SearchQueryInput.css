@@ -1,15 +1,13 @@
 .search-bar {
   width: 100%;
-  padding: 1em 0;
+  padding: 16px 0;
+  display: flex;
 }
 
 .search-bar input {
+  flex-grow: 1;
   width: 75%;
-  padding: 1em;
+  padding: 12px;
   box-sizing: border-box;
   outline: none;
-}
-
-.search-bar button {
-  width: 25%;
 }
