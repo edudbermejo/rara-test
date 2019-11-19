@@ -1,0 +1,12 @@
+.information-block {
+  padding-bottom: 8px;
+}
+
+.information-block-info {
+  display: block;
+  white-space: nowrap;
+}
+
+.information-block-label {
+  font-weight: bold;
+}
