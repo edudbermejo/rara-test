@@ -6,7 +6,7 @@ import './ImageCard.css'
 function ImageCard({imageDetails}) {
 
   const date = new Date(imageDetails.dateTaken)
-  const dateToShow = date.toDateString()
+  const dateToShow = date.toDateString().slice(4)
 
   return  (
     <div className="image-card">
