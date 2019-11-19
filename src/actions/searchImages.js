@@ -45,7 +45,7 @@ export const fetchImages = () => {
               return {
                 title: elem.title,
                 ownerName: elem.ownername,
-                dateTaken: elem.dateTaken,
+                dateTaken: elem.datetaken,
                 farm: elem.farm,
                 server: elem.server,
                 id: elem.id,

@@ -17,7 +17,7 @@ let ThumbnailsList = ({dispatch}) => {
     : undefined
 
   const imagesHtml = images.length > 0
-  ? <ul className="images-list">{images.map(image => <li><ImageCard key={image.id} imageDetails={image} /></li>)}</ul>
+  ? <ul className="images-list">{images.map(image => <li key={image.id}><ImageCard imageDetails={image} /></li>)}</ul>
   : undefined
 
   return (
