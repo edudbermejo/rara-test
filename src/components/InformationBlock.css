@@ -4,6 +4,7 @@
 
 .information-block-info {
   display: block;
+  white-space: nowrap;
 }
 
 .information-block-label {
